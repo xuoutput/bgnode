@@ -1,2 +1,2 @@
 # bgnode
-learn node
+start N-blog

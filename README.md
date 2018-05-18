@@ -44,3 +44,10 @@ nrm use cnpm
 这里我安装完nrm后出现2个问题,首先是因为之前我是用ln -s 这种方法添加到`/usr/local/bin`中的npm和node所以这个有问题了,这个nrm全局安装后还是在`/usr/local/nodejs/bin`中,所以又要一次`ln -s`
 因该用PATH来添加到全局变量中,这样不用每次都ln
 还有就是我安装完后就算到了这么做了,`nrm`也启动不了.
+
+解决办法:
+
+```
+export PATH=/usr/local/nodejs/bin:$PATH
+这个方法添加就没事了,可以找到nrm 所以还是别用ln -s添加
+```
